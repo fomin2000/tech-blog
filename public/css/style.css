@@ -1,0 +1,33 @@
+
+
+.linksList {
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.linksList li {
+    margin: 20px;
+    font-size: 20px;
+}
+
+.navbarTitleCont {
+    background-color: rgb(42, 139, 142);
+    border-radius: 10px;
+}
+
+.navbarTitleCont h1 {
+    margin: 10px;
+}
+
+body {
+    background-color: rgb(42, 139, 142);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
