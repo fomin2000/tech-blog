@@ -1,12 +1,14 @@
 const createPostBtn = document.getElementById('createPostBtn')
+const titleInput = document.getElementById('titleInput')
+const bodyInput = document.getElementById('bodyInput')
 
 const newFormHandler = async (event) => {
     event.preventDefault();
   
-    const title = document.querySelector('input[name="post-title"]').value;
-    const body = document.querySelector('textarea[name="post-body"]').value;
+    const title = titleInput.value.trim();
+    const body = bodyInput.value.trim();
   
-    await fetch(`/api/post`, {
+    await fetch('/api/post', {
       method: 'POST',
       body: JSON.stringify({
         title,
